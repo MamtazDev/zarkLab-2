@@ -110,9 +110,9 @@ const PriceMovementChart = () => {
           <button
             onClick={() => handleActiveLIne("token")}
             className={`${
-              activeLine.includes("token") &&
-              "border border-[#14F092] bg-[#0d0d0d] font-[600]"
-            } bg-[#202123] rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[400] `}
+              activeLine.includes("token") ?
+              " border border-[#14F092] bg-[#0d0d0d] rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]" :"bg-[#202123] border border-transparent  rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]"
+            }  `}
           >
             Token
           </button>
@@ -120,8 +120,9 @@ const PriceMovementChart = () => {
           <button
             onClick={() => handleActiveLIne("benchmark")}
             className={`${
-              activeLine.includes("benchmark") && "  bg-[#0d0d0d] font-[600] "
-            } bg-[#202123]  text-[9px] font-[400] text-[#CDCDCD]  rounded-[4px] py-[10px] px-[16px]`}
+              activeLine.includes("benchmark") ?
+              " border border-[#FFC459] bg-[#0d0d0d]  " :"bg-[#202123]  border border-transparent"
+            }  text-[9px] font-[500] text-[#CDCDCD]  rounded-[4px] py-[10px] px-[16px]`}
           >
             Industry Benchmark
           </button>

@@ -55,7 +55,7 @@ const WalletHolding = () => {
           <h3 className="mt-[23px] mb-[22px] text-[16px] font-[600] text-[#8A8A8A] ">
             WALLET HOLDING
           </h3>
-          <div className="p-[20px] bg-[#111212] rounded-[6px] h-[294px]">
+          <div className="p-0 lg:p-[20px] bg-[#111212] rounded-[6px] h-[294px]">
             <p className="text-[14px] font-[600] mb-[17px]">
               Distribution of Amount Held
             </p>
