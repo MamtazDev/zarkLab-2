@@ -127,7 +127,7 @@ const PriceMovementChart = () => {
           </button>
         </div>
       </div>
-      <div className="p-[30px] bg-[#111212] rounded-[6px] h-[320px] overflow-hidden">
+      <div className="p-0 lg:p-[30px] bg-[#111212] rounded-[6px] h-[320px] overflow-hidden">
         <div className="mb-[20px] flex justify-between px-[30px]">
           <h4 className="">Token Price (USD)</h4>
           <div className="flex gap-[10px] items-center">

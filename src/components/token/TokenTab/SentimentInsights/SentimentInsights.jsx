@@ -10,7 +10,7 @@ const SentimentInsights = () => {
           DAILY SOCIAL MEDIA STATS
         </h3>
         <div className="col-span-2 bg-[#161617] rounded-[2px] h-[49px]"></div>
-        <div className=" bg-[#161617] rounded-[2px] h-[49px]"></div>
+        <div className="col-span-2 lg:col-span-1 bg-[#161617] rounded-[2px] h-[49px]"></div>
       </div>
       <MediaStats />
       {/* <TopInfluencers /> */}
