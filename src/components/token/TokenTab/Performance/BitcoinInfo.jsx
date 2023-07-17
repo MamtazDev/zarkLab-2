@@ -10,11 +10,10 @@ import "./BitcoinInfo.css";
 const BitcoinInfo = () => {
   const [followed, setFollowed] = useState(false);
   return (
-    <div className="flex gap-[18px]">
+    <div className="flex flex-wrap lg:flex-nowrap gap-[18px]">
       {/* left section */}
       <div className="w-full lg:max-w-[380px]">
-
-        <div className="flex  flex-wrap lg:flex-nowrap  justify-between mb-[32px] ">
+        <div className="flex flex-wrap gap-3 gap-lg-0 lg:flex-nowrap  justify-between mb-[32px] ">
           <div className="flex">
             <img src={BitcoinIcon} alt="" className="object-contain" />
             <div className="flex flex-col justify-between ">
@@ -27,7 +26,7 @@ const BitcoinInfo = () => {
               <p className="text-[30px] font-[600]">$30,876</p>
             </div>
           </div>
-          <div className="flex flex-row lg:flex-col gap-4 justify-between">
+          <div className="flex flex-col  gap-4 justify-between">
             <p
               className={`flex gap-[4px] cursor-pointer text-[12px] justify-center font-[600] ${
                 followed && "bg-[#14f092]"
@@ -107,7 +106,7 @@ const BitcoinInfo = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-2 border-l-2 border-[#212123] pl-[16px]">
+          <div className="col-span-2 lg:border-l-2 lg:border-[#212123] lg:pl-[16px]">
             <div className="bg-[#161617] rounded-[2px] h-[137px]"></div>
           </div>
         </div>

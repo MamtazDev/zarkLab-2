@@ -1,6 +1,7 @@
 import React from "react";
 import MediaActivitices from "./MediaActivitices";
 import Words from "./Words";
+import RecommendedTokens from "./RecommendedTokens";
 
 const MediaStats = () => {
   return (
@@ -8,7 +9,9 @@ const MediaStats = () => {
       <div className="col-span-3">
         <MediaActivitices />
       </div>
-      <Words />
+      <div className="col-span-3 lg:col-span-1">
+        <RecommendedTokens/>
+      </div>
     </div>
   );
 };

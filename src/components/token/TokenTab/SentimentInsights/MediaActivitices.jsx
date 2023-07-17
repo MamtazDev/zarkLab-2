@@ -81,7 +81,7 @@ const MediaActivitices = () => {
               />
             </div>
             <div className="w-full">
-              <div className="flex flex-wrap gap-2 justify-between">
+              <div className="flex flex-wrap gap-1 justify-between">
                 <div className="flex  items-center mb-[10px]">
                   <p className="text-[14px] font-[600] ">Nikolarn</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
@@ -91,7 +91,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[10px] items-center">
+                <div className="flex gap-[40px] items-center">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={heartIcon} alt="" className="object-contain" /> 21
                   </p>
@@ -106,7 +106,7 @@ const MediaActivitices = () => {
                 </div>
               </div>
 
-              <p className="text-[13px] font-[600] text-[#8A8A8A]">
+              <p className="pt-2 lg:pt-0  text-[13px] font-[600] text-[#8A8A8A]">
                 A boy asked his bitcoin-investing dad for 1 bitcoin for his
                 birthday.
               </p>
@@ -126,7 +126,7 @@ const MediaActivitices = () => {
               />
             </div>
             <div className="w-full">
-              <div className="flex flex-wrap gap-2 justify-between">
+              <div className="flex flex-wrap gap-1 justify-between">
                 <div className="flex items-center mb-[10px]">
                   <p className="text-[14px] font-[600] ">Greg Schoen</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
@@ -136,7 +136,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[10px] items-center">
+                <div className="flex gap-[40px] items-center">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={heartIcon} alt="" className="object-contain" />{" "}
                     325
@@ -152,7 +152,7 @@ const MediaActivitices = () => {
                 </div>
               </div>
 
-              <p className="text-[13px] font-[600] text-[#8A8A8A]">
+              <p className="pt-2 lg:pt-0  text-[13px] font-[600] text-[#8A8A8A]">
                 I wish I had kept my 1,700 BTC@$0.06 instead of selling them at
                 $0.30, now that they're $8.00 #bitcoin
               </p>
@@ -168,7 +168,7 @@ const MediaActivitices = () => {
               />
             </div>
             <div className="w-full">
-              <div className="flex flex-wrap gap-2 justify-between">
+              <div className="flex flex-wrap gap-1 justify-between">
                 <div className="flex items-center mb-[10px]">
                   <p className="text-[14px] font-[600] ">Donald J. Trump</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
@@ -178,7 +178,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[10px] items-center">
+                <div className="flex gap-[40px] items-center">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={heartIcon} alt="" className="object-contain" />{" "}
                     2341
@@ -194,7 +194,7 @@ const MediaActivitices = () => {
                 </div>
               </div>
 
-              <p className="text-[13px] font-[600] text-[#8A8A8A]">
+              <p className="pt-2 lg:pt-0 text-[13px] font-[600] text-[#8A8A8A]">
                 #Bitcoin is fantastic, not even CHINA can manipulate it.
               </p>
               <p className="text-[13px] font-[600] text-[#8A8A8A]">
