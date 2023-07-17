@@ -12,9 +12,9 @@ import crypto8 from "../../../../../assets/icons/crypto8.png";
 import crypto9 from "../../../../../assets/icons/crypto9.png";
 import exchangeIcon from "../../../../../assets/icons/exchangeIcon.png";
 import "./AnomalyDetection.css";
-import jsPDF from "jspdf";
+// import jsPDF from "jspdf";
 // import XLSX from 'xlsx';
-import { useExcelDownloder } from "react-xls";
+// import { useExcelDownloder } from "react-xls";
 
 const AnomalyDetection = () => {
   const [active, setAcitve] = useState("value");
@@ -45,7 +45,7 @@ const AnomalyDetection = () => {
     // Save the PDF
     doc.save("data_array.pdf");
   };
-  const { ExcelDownloder, Type } = useExcelDownloder();
+  // const { ExcelDownloder, Type } = useExcelDownloder();
 
   const data = {
     // Worksheet named animals
@@ -81,13 +81,7 @@ const AnomalyDetection = () => {
         </h3>
 
         <div className="flex flex-wrap items-center gap-[16px]">
-          <ExcelDownloder
-            data={data}
-            filename={"book"}
-            type={Type.Button} // or type={'button'}
-          >
-            <img src={downloadIcon} alt="" />
-          </ExcelDownloder>
+          <img src={downloadIcon} alt="" />
           <button
             onClick={() => setAcitve("value")}
             className={`${
