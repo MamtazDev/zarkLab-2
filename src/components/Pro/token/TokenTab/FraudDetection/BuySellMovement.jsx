@@ -107,7 +107,7 @@ const BuySellMovement = () => {
   return (
     <div className="bg-[#111212] p-0 lg:p-[20px] mt-[15px]">
       <div className="flex flex-col lg:flex-row justify-between mb-[30px]">
-        <h3 className="text-[16px] font-[600] text-[#8A8A8A] flex items-center gap-[10px] relative">
+        <h3 className="p-5 lg:p-0 text-[16px] font-[600] text-[#8A8A8A] flex items-center gap-[10px] relative">
           Buy/ Sell Movement{" "}
           <img
             src={infoIcon}
@@ -122,7 +122,7 @@ const BuySellMovement = () => {
             </p>
           )}
         </h3>
-        <div className="flex gap-[10px] items-center">
+        <div className=" px-5 lg:px-0 flex gap-[10px] items-center">
           <button className="text-[12px] font-[400] text-[#666666]  ">
             24h
           </button>

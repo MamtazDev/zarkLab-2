@@ -27,7 +27,7 @@ const TopInfluencers = () => {
               sorting === "followers"
                 ? "text-white font-[600] border border-[#14F092]"
                 : "text-[#B1B1B1] font-[400]"
-            } w-[130px] bg-[#111212] rounded-[4px]  text-center py-[10px] text-[12px]  `}
+            } lg:w-[130px] bg-[#111212] rounded-[4px]  text-center px-[10px] py-[2px] lg:py-[10px] text-[12px]  `}
           >
             By Followers
           </button>
@@ -37,7 +37,7 @@ const TopInfluencers = () => {
               sorting === "likes"
                 ? "text-white font-[600] border border-[#14F092]"
                 : "text-[#B1B1B1] font-[400]"
-            } w-[130px] bg-[#111212] rounded-[4px]  text-center py-[10px] text-[12px]  `}
+            } lg:w-[130px] bg-[#111212] rounded-[4px]  text-center px-[10px] py-[2px] lg:py-[10px] text-[12px]  `}
           >
             By Likes
           </button>
@@ -47,24 +47,26 @@ const TopInfluencers = () => {
               sorting === "engagement"
                 ? "text-white font-[600] border border-[#14F092]"
                 : "text-[#B1B1B1] font-[400]"
-            } w-[130px] bg-[#111212] rounded-[4px]  text-center py-[10px] text-[12px]  `}
+            } lg:w-[130px] bg-[#111212] rounded-[4px]  text-center px-[10px] py-[2px] lg:py-[10px] text-[12px]  `}
           >
             By Engagement
           </button>
         </div>
       </div>
 
-      <div className="mt-[11px]  table-scrollbar">
+      <div className="mt-[11px] overflow-x-auto  table-scrollbar">
         <table className="table-auto w-full topInfluencerTable">
           <thead className="whitespace-nowrap">
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1]">
-              <th className="py-[15px] px-[23px] text-start">Influencer</th>
-              <th>Social Media Presence</th>
-              <th>Number of Followers</th>
-              <th>Total Retweets</th>
-              <th>Total Likes</th>
-              <th>% Crypto Post</th>
-              <th>
+              <th className="py-[15px] px-[100px] lg:px-[23px] text-start">
+                Influencer
+              </th>
+              <th className="px-[23px]">Social Media Presence</th>
+              <th className="px-[23px]">Number of Followers</th>
+              <th className="px-[23px]">Total Retweets</th>
+              <th className="px-[23px]">Total Likes</th>
+              <th className="px-[23px]">% Crypto Post</th>
+              <th className="px-[23px]">
                 <div className="flex justify-center items-center gap-[4px]">
                   {" "}
                   Engagement{" "}
@@ -154,7 +156,7 @@ const TopInfluencers = () => {
               <td className="py-[8px] pl-[23px]">
                 <div className="flex items-center gap-[22px]">
                   <div>
-                    <img src={likeIcon} alt="" />
+                    <img src={likeIcon} alt="" className="object-contain" />
                   </div>
                   <div className="text-[14px] font-[400]">
                     <p>Roger Ver</p>
@@ -226,7 +228,7 @@ const TopInfluencers = () => {
               <td className="py-[8px] pl-[23px]">
                 <div className="flex items-center gap-[22px]">
                   <div>
-                    <img src={waveIcon} alt="" />
+                    <img src={waveIcon} alt="" className="object-contain" />
                   </div>
                   <div className="text-[14px] font-[400]">
                     <p>Andreas M. Antonopoulos</p>

@@ -106,7 +106,7 @@ const AnomalyDetection = () => {
             <input
               type="search"
               placeholder="Search by Wallet"
-              className="searchInput bg-[#111212] px-[20px] py-[12px] outline-none rounded-[6px] w-[250px] h-[36px]"
+              className="w-full searchInput bg-[#111212] px-[20px] py-[12px] outline-none rounded-[6px] lg:w-[250px] h-[36px]"
               onChange={(e) => setSearchText(e.target.value)}
             />
             {searchText && (
@@ -125,13 +125,13 @@ const AnomalyDetection = () => {
           <thead>
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1] ">
               <th className="py-[15px] px-[23px] text-start">Exchange</th>
-              <th className="text-start">Date</th>
-              <th className="text-start">Sold</th>
-              <th className="text-center">Bought</th>
-              <th className="text-start">Value</th>
-              <th className="text-start">From</th>
-              <th className="text-start">To</th>
-              <th className="text-start">Persona</th>
+              <th className="px-[50px] lg:px-0 text-start">Date</th>
+              <th className="px-[50px] lg:px-0 text-start">Sold</th>
+              <th className="px-[50px] lg:px-0 text-center">Bought</th>
+              <th className="px-[50px] lg:px-0 text-start">Value</th>
+              <th className="px-[50px] lg:px-0 text-start">From</th>
+              <th className="px-[50px] lg:px-0 text-start">To</th>
+              <th className="px-[50px] lg:px-0 text-start">Persona</th>
             </tr>
           </thead>
           <tbody>
@@ -169,7 +169,9 @@ const AnomalyDetection = () => {
               <td className="text-[12px] font-[400]">$31,023,421.42</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
-              <td className="text-[12px] font-[400]">Team</td>
+              <td className="text-[12px] font-[400] text-center lg:text-start">
+                Team
+              </td>
             </tr>
             <tr className="bg-[#111212]">
               <td className="py-[11px]">
@@ -205,7 +207,9 @@ const AnomalyDetection = () => {
               <td className="text-[12px] font-[400]">$15,642,772.17</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
-              <td className="text-[12px] font-[400]">Whale</td>
+              <td className="text-[12px] font-[400] text-center lg:text-start">
+                Whale
+              </td>
             </tr>
             <tr className="bg-[#111212]">
               <td className="py-[11px]">
@@ -241,7 +245,9 @@ const AnomalyDetection = () => {
               <td className="text-[12px] font-[400]">$31,023,421.42</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
-              <td className="text-[12px] font-[400]">Whale</td>
+              <td className="text-[12px] font-[400] text-center lg:text-start">
+                Whale
+              </td>
             </tr>
             <tr className="bg-[#111212]">
               <td className="py-[11px]">
@@ -277,7 +283,9 @@ const AnomalyDetection = () => {
               <td className="text-[12px] font-[400]">$31,023,421.42</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
               <td className="text-[12px] font-[400]">0x8b05...d7db</td>
-              <td className="text-[12px] font-[400]">Whale</td>
+              <td className="text-[12px] font-[400] text-center lg:text-start">
+                Whale
+              </td>
             </tr>
           </tbody>
         </table>

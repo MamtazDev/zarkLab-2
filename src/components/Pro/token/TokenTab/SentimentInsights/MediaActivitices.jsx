@@ -72,7 +72,7 @@ const MediaActivitices = () => {
       </div>
 
       <div className="bg-[#111212] rounded-[6px] px-[20px] pt-[20px] pb-[10px] mt-[13px] ">
-        <div className="mb-4 flex justify-between items-center">
+        <div className="mb-4 flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between items-center">
           <div className="flex gap-5 items-center">
             <h6 className="text-[14px] font-[600] text-[#B1B1B1] ">
               Top 3 Tweets of the Day
@@ -127,7 +127,7 @@ const MediaActivitices = () => {
             </div>
             <div className="w-full">
               <div className="flex flex-wrap justify-between">
-                <div className="flex items-center">
+                <div className="flex items-center mb-1 lg:mb-0">
                   <p className="text-[14px] font-[600] ">Nikolarn</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
                     <p>@TheRealNikolarn</p>
@@ -136,7 +136,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[40px] items-center">
+                <div className="flex gap-[40px] items-center mb-1 lg:mb-0">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={commentIcon} alt="" className="object-contain" />{" "}
                     21
@@ -173,7 +173,7 @@ const MediaActivitices = () => {
             </div>
             <div className="w-full">
               <div className="flex flex-wrap justify-between">
-                <div className="flex items-center">
+                <div className="flex items-center mb-1 lg:mb-0">
                   <p className="text-[14px] font-[600] ">Greg Schoen</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
                     <p>@GregSchoen</p>
@@ -182,7 +182,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[40px] items-center">
+                <div className="flex gap-[40px] items-center mb-1 lg:mb-0">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={commentIcon} alt="" className="object-contain" />{" "}
                     325
@@ -215,7 +215,7 @@ const MediaActivitices = () => {
             </div>
             <div className="w-full">
               <div className="flex flex-wrap justify-between">
-                <div className="flex items-center">
+                <div className="flex items-center mb-1 lg:mb-0">
                   <p className="text-[14px] font-[600] ">Donald J. Trump</p>
                   <div className="ml-[7px] text-[10px] font-[600] text-[#8A8A8A] flex">
                     <p>@realDonaldTrump</p>
@@ -224,7 +224,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[40px] items-center">
+                <div className="flex gap-[40px] items-center mb-1 lg:mb-0">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={commentIcon} alt="" className="object-contain" />{" "}
                     2341

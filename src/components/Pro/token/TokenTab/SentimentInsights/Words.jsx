@@ -4,7 +4,7 @@ import RecommendedTokens from "./RecommendedTokens";
 
 const Words = () => {
   return (
-    <div className="h-[371px]">
+    <div className="h-[358px] col-span-3 lg:col-span-1 ">
       {/* <PopularWords /> */}
       <RecommendedTokens />
     </div>

@@ -20,7 +20,7 @@ const RecommendedTokens = () => {
     }
   };
   return (
-    <div className="bg-[#111212] rounded-[6px] p-[20px]">
+    <div className="bg-[#111212] rounded-[6px] p-[20px] h-full">
       <p className="text-[14px] text-[#B1B1B1] font-[600] mb-[13px]">
         Recommended Tokens
       </p>
