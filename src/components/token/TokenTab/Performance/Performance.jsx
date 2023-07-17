@@ -4,7 +4,7 @@ import PriceMovementChart from "./PriceMovementChart";
 
 const Performance = () => {
   return (
-    <div className="mt-[46px]">
+    <div className="mt-[44px]">
       <BitcoinInfo />
       <PriceMovementChart />
     </div>
