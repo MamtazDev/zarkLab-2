@@ -347,7 +347,7 @@ const TokenBenchmarking = () => {
             <button
               className={`${
                 activeLine.includes("industry") && "border border-[#FFC459]"
-              } flex items-center gap-[7px] text-[9px] font-[400] text-[#CDCDCD]  rounded-[4px] py-[6px] px-[16px]`}
+              } flex items-center gap-[7px] text-[9px] font-[400] text-[#CDCDCD]  rounded-[4px] py-[6px] px-[6px] md:px-[16px]`}
               onClick={() => handleActiveLIne("industry")}
             >
               Industry Benchmark{" "}
@@ -416,7 +416,7 @@ const TokenBenchmarking = () => {
       {/* <Transactions />
       <AmountBarChat />
       <AmountProgressChart /> */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[25px]">
+      <div className="grid grid-cols-1 lg:grid-cols- xl:grid-cols-3 gap-[25px]">
         <FirstColumn
           sortedData={sortedData}
           activeLine={activeLine}

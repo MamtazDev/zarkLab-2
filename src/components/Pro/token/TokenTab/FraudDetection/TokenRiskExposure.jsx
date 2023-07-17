@@ -70,7 +70,7 @@ const TokenRiskExposure = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[22px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[22px]">
         <div className="p-[16px] rounded-[6px] bg-[#111212]">
           <p className="text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
             Risk Score

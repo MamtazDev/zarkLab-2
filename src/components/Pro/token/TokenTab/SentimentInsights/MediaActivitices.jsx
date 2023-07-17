@@ -21,7 +21,7 @@ const MediaActivitices = () => {
           </p>
           <div className="flex gap-[27px]  items-center">
             <p className="text-[26px] font-[600]">13,405</p>
-            <div className="flex  items-center gap-[8px]">
+            <div className="flex flex-wrap lg:mt-2 xl:mt-0   items-center gap-[8px]">
               <p className="text-[12px] font-[400] text-[#14F092] bg-[#212123] rounded-[20px] px-[10px] py-[3px] flex gap-[4px]">
                 <img
                   src={increaseGreenArrow}
