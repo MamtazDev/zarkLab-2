@@ -3,7 +3,7 @@ import "./TokenTab.css";
 
 const TokenTab = ({ activeTab, setActiveTab }) => {
   return (
-    <div className="overflow-y-scroll no-scrollbar w-full flex gap-4 whitespace-nowrap mt-[40px] border-b-[2px] border-[#212123] text-[14px] font-[600] text-[#666666]">
+    <div className="overflow-y-scroll no-scrollbar w-full flex gap-4 whitespace-nowrap  border-b-[2px] border-[#212123] text-[14px] font-[600] text-[#666666]">
       <p
         className={`w-full text-center py-[12px] tab cursor-pointer ${
           activeTab === "performance" && "border-b-[2px] border-[#14F092]"

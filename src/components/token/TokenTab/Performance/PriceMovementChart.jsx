@@ -101,8 +101,8 @@ const PriceMovementChart = () => {
     return null;
   };
   return (
-    <div className="mt-[60px]">
-      <div className="flex flex-wrap gap-4 justify-between items-center mb-10">
+    <div className="mt-[33px]">
+      <div className="flex flex-wrap gap-4 justify-between items-center mb-[25px]">
         <h3 className="text-[16px] text-[#8A8A8A] font-[600] ">
           PRICE MOVEMENT
         </h3>
@@ -110,8 +110,9 @@ const PriceMovementChart = () => {
           <button
             onClick={() => handleActiveLIne("token")}
             className={`${
-              activeLine.includes("token") ?
-              " border border-[#14F092] bg-[#0d0d0d] rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]" :"bg-[#202123] border border-transparent  rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]"
+              activeLine.includes("token")
+                ? " border border-[#14F092] bg-[#0d0d0d] rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]"
+                : "bg-[#202123] border border-transparent  rounded-[4px] py-[9px] px-[16px]  text-[9px] font-[500]"
             }  `}
           >
             Token
@@ -120,8 +121,9 @@ const PriceMovementChart = () => {
           <button
             onClick={() => handleActiveLIne("benchmark")}
             className={`${
-              activeLine.includes("benchmark") ?
-              " border border-[#FFC459] bg-[#0d0d0d]  " :"bg-[#202123]  border border-transparent"
+              activeLine.includes("benchmark")
+                ? " border border-[#FFC459] bg-[#0d0d0d]  "
+                : "bg-[#202123]  border border-transparent"
             }  text-[9px] font-[500] text-[#CDCDCD]  rounded-[4px] py-[10px] px-[16px]`}
           >
             Industry Benchmark

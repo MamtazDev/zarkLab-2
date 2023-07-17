@@ -43,7 +43,7 @@ const TokenHeader = () => {
   };
   // nipaaaa
   return (
-    <div className="flex gap-4 items-center ">
+    <div className="flex gap-4 items-center mb-[14px]">
       <div className="w-3/4 lg:w-5/6 relative">
         <div className="flex">
           <input
