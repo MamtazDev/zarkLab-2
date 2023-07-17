@@ -66,7 +66,7 @@ const WalletHolding = () => {
 
       {/* distribution amount barchart */}
 
-      <div className="flex flex-col lg:flex-row gap-[26px]">
+      <div className="flex flex-col xl:flex-row gap-[26px]">
         <div className="p-[20px] bg-[#111212] rounded-[6px] h-[211px]">
           <p className="text-[14px] font-[600] mb-[17px]">
             Distribution of Amount Held

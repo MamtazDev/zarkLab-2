@@ -125,13 +125,13 @@ const AnomalyDetection = () => {
           <thead>
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1] ">
               <th className="py-[15px] px-[23px] text-start">Exchange</th>
-              <th className="px-[50px] lg:px-0 text-start">Date</th>
-              <th className="px-[50px] lg:px-0 text-start">Sold</th>
-              <th className="px-[50px] lg:px-0 text-center">Bought</th>
-              <th className="px-[50px] lg:px-0 text-start">Value</th>
-              <th className="px-[50px] lg:px-0 text-start">From</th>
-              <th className="px-[50px] lg:px-0 text-start">To</th>
-              <th className="px-[50px] lg:px-0 text-start">Persona</th>
+              <th className="px-[50px] xl:px-0 text-start">Date</th>
+              <th className="px-[50px] xl:px-0 text-start">Sold</th>
+              <th className="px-[50px] xl:px-0 text-center">Bought</th>
+              <th className="px-[50px] xl:px-0 text-start">Value</th>
+              <th className="px-[50px] xl:px-0 text-start">From</th>
+              <th className="px-[50px] xl:px-0 text-start">To</th>
+              <th className="px-[50px] xl:px-0 text-start">Persona</th>
             </tr>
           </thead>
           <tbody>
