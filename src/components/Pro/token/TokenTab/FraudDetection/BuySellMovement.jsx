@@ -30,6 +30,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 const BuySellMovement = () => {
   const [info, setInfo] = useState(false);
+  const [activeTime, setActiveTime] = useState("1w");
   const data = [
     {
       name: "Jan",
@@ -122,16 +123,60 @@ const BuySellMovement = () => {
             </p>
           )}
         </h3>
-        <div className=" px-5 lg:px-0 flex gap-[10px] items-center">
-          <button className="text-[12px] font-[400] text-[#666666]  ">
+        <div className="flex gap-[10px] items-center">
+          <button
+            className={`text-[12px] font-[400]  text-[#666666] ${
+              activeTime === "24h" && "border-b border-[#14F092] text-white"
+            } `}
+            onClick={() => {
+              setActiveTime("24h");
+              // setSortedData(dataHour);
+            }}
+          >
             24h
           </button>
-          <button className="text-[12px] font-[400] border-b border-[#14F092] ">
+          <button
+            className={`text-[12px] font-[400] text-[#666666]  ${
+              activeTime === "1w" && "border-b border-[#14F092] text-white"
+            } `}
+            onClick={() => {
+              setActiveTime("1w");
+              // setSortedData(data);
+            }}
+          >
             1w
           </button>
-          <button className="text-[12px] font-[400] text-[#666666] ">1m</button>
-          <button className="text-[12px] font-[400] text-[#666666] ">1y</button>
-          <button className="text-[12px] font-[400] text-[#666666] ">
+          <button
+            className={`text-[12px] font-[400] text-[#666666]  ${
+              activeTime === "1m" && "border-b border-[#14F092] text-white"
+            } `}
+            onClick={() => {
+              setActiveTime("1m");
+              // setSortedData(dataMonth);
+            }}
+          >
+            1m
+          </button>
+          <button
+            className={`text-[12px] font-[400] text-[#666666]   ${
+              activeTime === "1y" && "border-b border-[#14F092] text-white"
+            } `}
+            onClick={() => {
+              setActiveTime("1y");
+              // setSortedData(dataYear);
+            }}
+          >
+            1y
+          </button>
+          <button
+            className={`text-[12px] font-[400] text-[#666666]   ${
+              activeTime === "all" && "border-b border-[#14F092] text-white"
+            } `}
+            onClick={() => {
+              setActiveTime("all");
+              // setSortedData(dataYear);
+            }}
+          >
             All
           </button>
         </div>
