@@ -50,7 +50,7 @@ const WalletHolding = () => {
     <div>
       {/* distribution amount barchart */}
 
-      <div className="flex flex-wrap lg:flex-nowrap gap-[26px]">
+      <div className="flex flex-col lg:flex-row gap-[26px]">
         <div>
           <h3 className="mt-[23px] mb-[22px] text-[16px] font-[600] text-[#8A8A8A] ">
             WALLET HOLDING
