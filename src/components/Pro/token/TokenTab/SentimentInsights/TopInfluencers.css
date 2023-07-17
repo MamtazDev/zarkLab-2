@@ -1,0 +1,27 @@
+.topInfluencerTable {
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  border-radius: 20px !important;
+}
+
+.range {
+  border-bottom: 3px solid rgb(96, 95, 97);
+
+  position: relative;
+}
+
+.range_button {
+  position: absolute;
+  top: -10px;
+
+  border-radius: 20px;
+  padding: 2px 8px;
+  border: 1px solid black;
+
+  /* Dashboard/H4 */
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}

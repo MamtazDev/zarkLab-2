@@ -1,0 +1,7 @@
+.customBorder {
+  background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
+    linear-gradient(to left, rgba(210, 85, 209, 1), rgba(255, 196, 89, 1))
+      border-box;
+
+  border: 1px solid transparent;
+}

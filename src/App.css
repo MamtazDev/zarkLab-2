@@ -1,0 +1,16 @@
+tspan {
+    color: var(--dashboard-greyscale-grey-1, #B1B1B1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.recharts-legend-wrapper {
+    top: -50px;
+    left: unset !important;
+    height: unset !important;
+    width: unset !important;
+    bottom: unset !important;
+    right: 10%;
+}
+

@@ -1,0 +1,56 @@
+.customBorder {
+  background: linear-gradient(#0d0d0d, #0d0d0d) padding-box,
+    linear-gradient(to left, rgba(210, 85, 209, 1), rgba(255, 196, 89, 1))
+      border-box;
+
+  border: 1px solid transparent;
+}
+
+.searchBenchmark {
+  background-image: url("../../../../../assets/icons/searchIconLittle.png");
+  background-repeat: no-repeat;
+  background-position: right 10% center;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.inputFocus:focus {
+  border: 1px solid #59f5ff;
+}
+
+.custom-tooltip {
+  background-color: #212123;
+  border: 1px solid #666;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price,
+.rsi {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.custom-tooltip span {
+  color: #b1b1b1;
+}

@@ -1,0 +1,16 @@
+/* .topPersonsTable  {
+  border-collapse: initial;
+  border-radius: 20px !important;
+  border-spacing: 25px;
+} */
+
+.topPersonsTable table {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  border-radius: 20px !important;
+}
+
+.topPersonsTable table tr {
+  border-radius: 20px !important;
+  background: var(--dashboard-greyscale-grey-6, #111212);
+}

@@ -1,0 +1,13 @@
+.active {
+  color: white;
+}
+.active svg {
+  color: #14ed94;
+}
+
+.pro_logo {
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to bottom, #59f5ff, #14f092) border-box;
+  border-radius: 100px;
+  border: 1px solid transparent;
+}
