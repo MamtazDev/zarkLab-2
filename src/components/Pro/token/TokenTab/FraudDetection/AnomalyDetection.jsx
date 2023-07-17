@@ -120,7 +120,7 @@ const AnomalyDetection = () => {
         </div>
       </div>
 
-      <div className="mt-[11px] h-[250px] overflow-y-scroll overflow-x-scroll table-scrollbar pr-[7px]">
+      <div className="mt-[11px] h-[250px] overflow-y-scroll overflow-x-scroll lg:overflow-auto table-scrollbar pr-[7px]">
         <table className="table-auto w-full topInfluencerTable whitespace-nowrap ">
           <thead>
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1] ">

@@ -10,7 +10,7 @@ import "./BitcoinInfo.css";
 const BitcoinInfo = () => {
   const [followed, setFollowed] = useState(false);
   return (
-    <div className="flex flex-wrap lg:flex-nowrap gap-[28px]">
+    <div className="flex flex-wrap xl:flex-nowrap gap-[28px]">
       {/* left section */}
       <div className="w-full lg:max-w-[380px]">
         {/* upper left */}
