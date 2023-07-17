@@ -416,7 +416,7 @@ const TokenBenchmarking = () => {
       {/* <Transactions />
       <AmountBarChat />
       <AmountProgressChart /> */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-[25px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[25px]">
         <FirstColumn
           sortedData={sortedData}
           activeLine={activeLine}

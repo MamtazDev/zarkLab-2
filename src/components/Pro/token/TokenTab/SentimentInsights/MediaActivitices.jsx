@@ -224,7 +224,7 @@ const MediaActivitices = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-[40px] items-center mb-1 lg:mb-0">
+                <div className="flex gap-[40px] items-center">
                   <p className="flex gap-[4px] text-[8px] font-[400] text-[#747474]">
                     <img src={commentIcon} alt="" className="object-contain" />{" "}
                     2341

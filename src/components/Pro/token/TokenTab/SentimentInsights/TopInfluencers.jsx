@@ -58,7 +58,7 @@ const TopInfluencers = () => {
         <table className="table-auto w-full topInfluencerTable">
           <thead className="whitespace-nowrap">
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1]">
-              <th className="py-[15px] px-[100px] lg:px-[23px] text-start">
+              <th className="py-[15px] px-[100px] xl:px-[23px] text-start">
                 Influencer
               </th>
               <th className="px-[23px]">Social Media Presence</th>
