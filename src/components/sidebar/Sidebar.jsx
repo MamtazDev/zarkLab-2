@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   return (
     <div className="bg-[#000000] h-screen text-[#8A8A8A] px-[20px] py-[50px] flex flex-col justify-between">
-      <div className="flex flex-col gap-[20px]">
+      <div className="flex flex-col gap-[32px]">
         <NavLink className="mb-[25px]" to="/">
           <div className="flex  gap-[14px] items-center">
             <img src={logo} alt="" className="object-contain" />
