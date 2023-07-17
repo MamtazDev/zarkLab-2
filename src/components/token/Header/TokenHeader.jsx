@@ -44,18 +44,18 @@ const TokenHeader = () => {
   // nipaaaa
   return (
     <div className="flex gap-4 items-center ">
-      <div className="w-5/6 relative">
+      <div className="w-3/4 lg:w-5/6 relative">
         <div className="flex">
           <input
             type="text"
-            className="w-[96%] h-[45px] rounded-l-[6px] bg-[#161616] px-[20px] placeholder:text-[#8A8A8A] inputField"
+            className="w-[80%] lg:w-[96%] h-[45px] rounded-l-[6px] bg-[#161616] px-[20px] placeholder:text-[#8A8A8A] inputField"
             placeholder="Search Token"
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
             ref={inputRef}
           />
           <div
-            className="w-[4%] bg-[#161616] flex items-center justify-center rounded-r-[6px]"
+            className="w-[20%] lg:w-[4%] bg-[#161616] flex items-center justify-center rounded-r-[6px]"
             onClick={handleSearchIconClick}
           >
             {searchText ? (
@@ -80,7 +80,7 @@ const TokenHeader = () => {
           </div>
         )}
       </div>
-      <div className="w-1/6 relative">
+      <div className="lg:w-1/6 relative">
         <div
           className="flex items-center gap-3  justify-end cursor-pointer"
           onClick={() => setShow(!show)}
@@ -90,7 +90,9 @@ const TokenHeader = () => {
             src={user}
             alt=""
           />
-          <p className="text-[12px] font-[400] text-[#B1B1B1]">Hello Spiro</p>
+          <p className="hidden lg:block text-[12px] font-[400] text-[#B1B1B1]">
+            Hello Spiro
+          </p>
           <IoIosArrowDown />
         </div>
 
