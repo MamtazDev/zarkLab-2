@@ -128,7 +128,7 @@ const FirstColumn = ({ sortedData, activeLine }) => {
               <XAxis dataKey="name" tickLine={false} />
               <YAxis axisLine={false} tickLine={false} />
 
-              <Tooltip />
+              {/* <Tooltip /> */}
               {activeLine.includes("token") && (
                 <Area
                   type="linear"
