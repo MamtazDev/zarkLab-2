@@ -8,11 +8,13 @@ import CryptoAiChat from "../pages/CryptoAiChat";
 import Account from "../pages/Account";
 import Settings from "../pages/Settings";
 import Help from "../pages/Help";
+import NewProLayout from "../layout/NewProLayout";
+import NewToken from "../pages/NewToken";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <NewProLayout></NewProLayout>,
     children: [
       {
         path: "/",
@@ -22,9 +24,13 @@ export const router = createBrowserRouter([
         path: "/market",
         element: <Market></Market>,
       },
+      // {
+      //   path: "/token",
+      //   element: <Token />,
+      // },
       {
         path: "/token",
-        element: <Token></Token>,
+        element: <NewToken />,
       },
       {
         path: "/portfolio",

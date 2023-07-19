@@ -15,8 +15,8 @@ import littleDownArrow from "../../../../../assets/icons/littleDownArrow.png";
 
 const data = [
   {
-    name: "Jan",
-    Price: 0,
+    name: "feb",
+    Price: 40,
     RSI: 0,
     amt: 2400,
   },
@@ -24,7 +24,14 @@ const data = [
     name: "Feb",
     Price: 30,
     RSI: 40,
+
     amt: 2210,
+  },
+  {
+    name: "Feb",
+    Price: 40,
+    RSI: 50,
+    amt: 2250,
   },
   {
     name: "Mar",

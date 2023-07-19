@@ -1,0 +1,19 @@
+.tab {
+  position: relative;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 2px;
+  height: 13px;
+  background-color: #212123;
+}
+
+@media screen and (max-width: 767px) {
+  .tab::after {
+    display: none;
+  }
+}

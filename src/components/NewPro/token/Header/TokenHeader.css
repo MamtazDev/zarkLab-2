@@ -1,0 +1,9 @@
+.inputField {
+  /* background-image: url("../../../assets/icons/Icons.png");
+  background-repeat: no-repeat;
+  background-position: right 2% center; */
+}
+
+.inputField:focus-visible {
+  outline: none;
+}
