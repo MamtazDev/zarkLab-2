@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const NewProLayout = () => {
   return (
     <div className="flex">
-      <div className="w-[219px] h-screen border-r border-r-[#2B2C2F]">
+      <div className="hidden lg:block w-[219px] h-screen border-r border-r-[#2B2C2F]">
         <NewSideBar />
       </div>
       <div className=" py-[24px] w-full h-screen overflow-y-auto no-scrollbar">
