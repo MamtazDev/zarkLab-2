@@ -311,12 +311,12 @@ const TradeActivities = () => {
   };
   return (
     <div className="mt-[38px]">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row gap-[21px] md:gap-0 items-center justify-between ">
         <h3 className="text-[16px] text-[#8A8A8A] font-[600] ">
           TRADE ACTIVITY
         </h3>
-        <div className="flex items-center gap-[21px]">
-          <div className="flex flex-wrap gap-[9px] items-center">
+        <div className="flex items-center  flex-col md:flex-row gap-[21px]">
+          <div className="flex flex-wrap gap-[9px] items-center justify-center">
             <button
               onClick={() => handleActiveLIne("token")}
               className={`${
@@ -412,10 +412,10 @@ const TradeActivities = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[27px] flex gap-[15px] items-center">
+      <div className="mt-[27px] flex gap-[15px] items-center overflow-y-scroll no-scrollbar">
         <button
           onClick={() => setActiveTrader("all")}
-          className={`px-[15px] py-[9px] rounded-[4px] text-[12px] font-[600] ${
+          className={`px-[15px] py-[9px] whitespace-nowrap rounded-[4px] text-[12px] font-[600] ${
             activeTrader === "all"
               ? " bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"
@@ -424,7 +424,7 @@ const TradeActivities = () => {
           All
         </button>
         <button
-          className={`w-[117px]  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
             activeTrader === "whales"
               ? "bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"
@@ -434,7 +434,7 @@ const TradeActivities = () => {
           <img src={avatar1} alt="" /> Whales
         </button>
         <button
-          className={`w-[117px]  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
             activeTrader === "businesses"
               ? "bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"
@@ -444,7 +444,7 @@ const TradeActivities = () => {
           <img src={avatar2} alt="" /> Businesses
         </button>
         <button
-          className={`w-[117px]  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
             activeTrader === "dayTraders"
               ? "bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"
@@ -454,7 +454,7 @@ const TradeActivities = () => {
           <img src={avatar3} alt="" /> Day Traders
         </button>
         <button
-          className={`w-[117px]  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+          className={`w-[117px] whitespace-nowrap rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
             activeTrader === "explorers"
               ? "bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"
@@ -465,7 +465,7 @@ const TradeActivities = () => {
           Explorers
         </button>
         <button
-          className={`w-[117px]  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
             activeTrader === "team"
               ? "bg-[#0d0d0d] border border-[#14F092]"
               : "bg-[#161617] border border-transparent"

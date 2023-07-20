@@ -28,7 +28,7 @@ const LatestTransactions = () => {
         <table className="table-auto w-full topInfluencerTable whitespace-nowrap ">
           <thead>
             <tr className="bg-[#111212] text-[12px] font-[400] text-[#B1B1B1] ">
-              <th className="py-[15px] px-[33px] text-start">
+              <th className="py-[15px] pl-[33px] pr-[150px] xl:pr-[33px] text-start">
                 <div className=" flex items-center gap-[8px]">
                   {" "}
                   Wallet and Persona <img src={fillterIcon} alt="" />

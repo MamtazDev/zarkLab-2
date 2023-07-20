@@ -65,7 +65,7 @@ const CoinBasicInfo = () => {
       </div>
 
       {/* right section */}
-      <div className="w-[460px]  bg-[#111212] rounded-[5px]">
+      <div className="w-full lg:w-[460px]  bg-[#111212] rounded-[5px]">
         <div className=" px-[17px]  py-[13px] h-full">
           <div className="flex flex-col gap-[30px] lg:gap-0 lg:flex-row  h-full ">
             <div className="flex flex-row lg:flex-col justify-between pr-[12px]">

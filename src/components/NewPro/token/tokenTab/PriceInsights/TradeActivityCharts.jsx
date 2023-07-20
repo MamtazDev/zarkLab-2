@@ -5,7 +5,7 @@ const TradeActivityCharts = ({ sortedData, activeLine }) => {
   const [activeButton, setActiveButton] = useState("buy");
   const [activeButton2, setActiveButton2] = useState("buy");
   return (
-    <div className="mt-[24px] grid grid-cols-2 gap-[25px]">
+    <div className="mt-[24px] md:grid grid-cols-2 gap-[25px]">
       <div className="rounded-[6px] bg-[#111212]">
         <div className="px-[21px] pt-[12px]">
           <p className="text-[14px] font-[600] text-[#B1B1B1] mb-[10px]">

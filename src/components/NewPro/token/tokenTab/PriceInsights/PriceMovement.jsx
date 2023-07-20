@@ -524,8 +524,8 @@ const PriceMovement = () => {
     }
   };
   return (
-    <div className="mt-[33px] flex gap-[18px]">
-      <div className="w-[860px]">
+    <div className="mt-[33px] flex gap-[18px] flex-wrap xl:flex-nowrap">
+      <div className="w-full xl:w-[860px]">
         <div className="flex flex-wrap gap-4 justify-between items-center mb-[21px]">
           <h3 className="text-[16px] text-[#8A8A8A] font-[600] ">
             PRICE MOVEMENT
@@ -717,7 +717,7 @@ const PriceMovement = () => {
         </div>
       </div>
 
-      <div className="w-[300px]">
+      <div className="w-full xl:w-[300px]">
         <div className=" topPersonsTable w-full mt-[-7px]">
           <table class="w-full">
             <thead>
