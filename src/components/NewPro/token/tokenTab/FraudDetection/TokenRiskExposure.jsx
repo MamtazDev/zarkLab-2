@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import dangerIcon from "../../../../../assets/icons/dangerIcon.png";
 import decreaseArrow from "../../../../../assets/icons/decreaseArrowRed.png";
 import increasedArrow from "../../../../../assets/icons/increaseArrowGreen.png";
+import informationIcon from "../../../../../assets/icons/infoIconLittle.png";
 
 const TokenRiskExposure = () => {
   const [activeTime, setActiveTime] = useState("1w");
@@ -72,9 +73,21 @@ const TokenRiskExposure = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[22px]">
         <div className="p-[16px] rounded-[6px] bg-[#111212]">
-          <p className="text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
+          <p className="flex gap-1 text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
             Risk Score
+            <div className="tooltip cursor-pointer">
+              <img
+                src={informationIcon}
+                alt=""
+                className="object-contain mb-[20px]"
+              />
+              <p className="tooltiptext rounded-[6px] border border-[#666] px-[10px] py-[8px] w-[216px] text-[12px] font-[400] top-0 left-4 bg-[#212123]">
+                Anomaly is detected when there is a sudden spike in buy or sell
+                action
+              </p>
+            </div>
           </p>
+
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-[9px]">
               <img src={dangerIcon} alt="" />
@@ -89,8 +102,19 @@ const TokenRiskExposure = () => {
         </div>
 
         <div className="p-[16px] rounded-[6px] bg-[#111212]">
-          <p className="text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
+          <p className="flex gap-1 text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
             Founders Holding Token(%)
+            <div className="tooltip cursor-pointer">
+              <img
+                src={informationIcon}
+                alt=""
+                className="object-contain mb-[20px]"
+              />
+              <p className="tooltiptext rounded-[6px] border border-[#666] px-[10px] py-[8px] w-[216px] text-[12px] font-[400] top-0 left-4 bg-[#212123]">
+                Anomaly is detected when there is a sudden spike in buy or sell
+                action
+              </p>
+            </div>
           </p>
           <div className="flex justify-between items-center">
             <p className="text-[26px] font-[600]">56%</p>
@@ -103,8 +127,19 @@ const TokenRiskExposure = () => {
           </div>
         </div>
         <div className="py-[16px] px-[10px] rounded-[6px] bg-[#111212]">
-          <p className="text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
+          <p className="flex gap-1 text-[14px] font-[600] text-[#B1B1B1] mb-[17px]">
             Founders Holding Token(USD)
+            <div className="tooltip cursor-pointer">
+              <img
+                src={informationIcon}
+                alt=""
+                className="object-contain mb-[20px]"
+              />
+              <p className="tooltiptext rounded-[6px] border border-[#666] px-[10px] py-[8px] w-[216px] text-[12px] font-[400] top-0 left-4 bg-[#212123]">
+                Anomaly is detected when there is a sudden spike in buy or sell
+                action
+              </p>
+            </div>
           </p>
           <div className="flex justify-between items-center">
             <p className="text-[26px] font-[600]">$95,642,452</p>

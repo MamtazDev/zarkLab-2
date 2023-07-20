@@ -412,69 +412,82 @@ const TradeActivities = () => {
           </div>
         </div>
       </div>
+
       <div className="mt-[27px] flex gap-[15px] items-center overflow-y-scroll no-scrollbar">
-        <button
-          onClick={() => setActiveTrader("all")}
-          className={`px-[15px] py-[9px] whitespace-nowrap rounded-[4px] text-[12px] font-[600] ${
-            activeTrader === "all"
-              ? " bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-        >
-          All
-        </button>
-        <button
-          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
-            activeTrader === "whales"
-              ? "bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-          onClick={() => setActiveTrader("whales")}
-        >
-          <img src={avatar1} alt="" /> Whales
-        </button>
-        <button
-          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
-            activeTrader === "businesses"
-              ? "bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-          onClick={() => setActiveTrader("businesses")}
-        >
-          <img src={avatar2} alt="" /> Businesses
-        </button>
-        <button
-          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
-            activeTrader === "dayTraders"
-              ? "bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-          onClick={() => setActiveTrader("dayTraders")}
-        >
-          <img src={avatar3} alt="" /> Day Traders
-        </button>
-        <button
-          className={`w-[117px] whitespace-nowrap rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
-            activeTrader === "explorers"
-              ? "bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-          onClick={() => setActiveTrader("explorers")}
-        >
-          <img src={avatar4} alt="" />
-          Explorers
-        </button>
-        <button
-          className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
-            activeTrader === "team"
-              ? "bg-[#0d0d0d] border border-[#14F092]"
-              : "bg-[#161617] border border-transparent"
-          }`}
-          onClick={() => setActiveTrader("team")}
-        >
-          <img src={avatar5} alt="" />
-          Team
-        </button>
+        <div>
+          <button
+            onClick={() => setActiveTrader("all")}
+            className={`px-[15px] py-[9px] whitespace-nowrap rounded-[4px] text-[12px] font-[600] ${
+              activeTrader === "all"
+                ? " bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+          >
+            All
+          </button>
+        </div>
+        <div>
+          <button
+            className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+              activeTrader === "whales"
+                ? "bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+            onClick={() => setActiveTrader("whales")}
+          >
+            <img src={avatar1} alt="" /> Whales
+          </button>
+        </div>
+        <div>
+          <button
+            className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+              activeTrader === "businesses"
+                ? "bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+            onClick={() => setActiveTrader("businesses")}
+          >
+            <img src={avatar2} alt="" /> Businesses
+          </button>
+        </div>
+        <div>
+          <button
+            className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+              activeTrader === "dayTraders"
+                ? "bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+            onClick={() => setActiveTrader("dayTraders")}
+          >
+            <img src={avatar3} alt="" /> Day Traders
+          </button>
+        </div>
+        <div>
+          <button
+            className={`w-[117px] whitespace-nowrap rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+              activeTrader === "explorers"
+                ? "bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+            onClick={() => setActiveTrader("explorers")}
+          >
+            <img src={avatar4} alt="" />
+            Explorers
+          </button>
+        </div>
+        <div>
+          <button
+            className={`w-[117px] whitespace-nowrap  rounded-[4px] py-[6px] flex items-center justify-center gap-[6px] text-[12px] font-[400] ${
+              activeTrader === "team"
+                ? "bg-[#0d0d0d] border border-[#14F092]"
+                : "bg-[#161617] border border-transparent"
+            }`}
+            onClick={() => setActiveTrader("team")}
+          >
+            <img src={avatar5} alt="" />
+            Team
+          </button>
+        </div>
       </div>
 
       <TradeActivityCharts sortedData={sortedData} activeLine={activeLine} />
