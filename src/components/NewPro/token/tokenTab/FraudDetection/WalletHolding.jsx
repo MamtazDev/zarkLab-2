@@ -12,8 +12,27 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip">
+        <p className="price">{payload[0]?.value / 100}%</p>
+      </div>
+    );
+  }
+  return null;
+};
 
-const CustomBar = ({ x, y, width, height, fill, index, onMouseEnter, onMouseLeave }) => {
+const CustomBar = ({
+  x,
+  y,
+  width,
+  height,
+  fill,
+  index,
+  onMouseEnter,
+  onMouseLeave,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -22,7 +41,7 @@ const CustomBar = ({ x, y, width, height, fill, index, onMouseEnter, onMouseLeav
       y={y}
       width={width}
       height={height}
-      fill={isHovered ? '#14F092' : '#123E2C'}
+      fill={isHovered ? "#14F092" : "#123E2C"}
       onMouseEnter={() => {
         setIsHovered(true);
         onMouseEnter(index);
@@ -97,7 +116,10 @@ const WalletHolding = () => {
               <BarChart data={data}>
                 <XAxis dataKey="name" axisLine={false} tickLine={false} />
                 <YAxis axisLine={false} tickLine={false} />
-                {/* <Tooltip /> */}
+                <Tooltip
+                  content={<CustomTooltip />}
+                  cursor={{ fill: "transparent" }}
+                />
                 <Bar
                   dataKey="uv"
                   shape={(props) => (
