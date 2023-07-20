@@ -492,7 +492,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 const PriceMovement = () => {
-  const [activeLine, setActiveLine] = useState(["token"]);
+  const [activeLine, setActiveLine] = useState(["token", "category"]);
   const [activeTime, setActiveTime] = useState("1y");
 
   const [searchData, setSearchData] = useState([
@@ -535,18 +535,18 @@ const PriceMovement = () => {
               onClick={() => handleActiveLIne("token")}
               className={`${
                 activeLine.includes("token")
-                  ? "border border-[#14F092] bg-[#0d0d0d] font-[600] rounded-[4px] py-[5px] px-[25px]  text-[12px]"
-                  : "bg-[#202123] border border-transparent rounded-[4px] py-[5px] px-[25px]  text-[12px] font-[600]"
+                  ? "border border-[#14F092] bg-[#0d0d0d] rounded-[4px] py-[5px] px-[25px]  text-[12px] font-[400]"
+                  : "bg-[#202123] border border-transparent rounded-[4px] py-[5px] px-[25px]  text-[12px] font-[400]"
               }  `}
             >
               Token
             </button>
             <button
-              //   onClick={() => handleActiveLIne("benchmark")}
+              onClick={() => handleActiveLIne("category")}
               className={`${
-                activeLine.includes("benchmark")
-                  ? "border border-[#FFC459] bg-[#0d0d0d] font-[600] text-[9px] py-[5px] px-[16px] rounded-[4px]"
-                  : "border border-transparent bg-[#202123] font-[400] text-[12px] py-[5px] px-[16px] rounded-[4px] text-[#CDCDCD]"
+                activeLine.includes("category")
+                  ? "border border-[#FFC459] bg-[#0d0d0d]  rounded-[4px] py-[5px] px-[25px]  text-[12px] font-[400]"
+                  : "bg-[#202123] border border-transparent rounded-[4px] py-[5px] px-[25px]  text-[12px] font-[400] text-[#CDCDCD]"
               } `}
             >
               Category
@@ -647,7 +647,7 @@ const PriceMovement = () => {
                 <YAxis axisLine={false} tickLine={false} orientation="right" />
 
                 <Tooltip content={<CustomTooltip />} />
-                {activeLine.includes("benchmark") && (
+                {activeLine.includes("category") && (
                   <Area
                     type="linear"
                     dataKey="Price"
@@ -700,7 +700,7 @@ const PriceMovement = () => {
                     fill="url(#colorabsent)"
                   />
                 )}
-                {activeLine.includes("benchmark") && (
+                {activeLine.includes("category") && (
                   <Line
                     type="monotone"
                     dataKey="Price"
