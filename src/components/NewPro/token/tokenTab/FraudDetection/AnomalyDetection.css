@@ -1,0 +1,47 @@
+.searchInput {
+  background-image: url("../../../../../assets/icons/searchIconGrey.png");
+  background-repeat: no-repeat;
+  background-position: right 10% center;
+}
+
+.searchInput::placeholder {
+  color: #8a8a8a;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* .table-scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+
+.table-scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #edf2f7;
+} */
+
+.table-scrollbar::-webkit-scrollbar {
+  width: 9px;
+  /* Set the width of the scrollbar */
+}
+
+/* Customize the thumb */
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  /* Set the color of the thumb */
+  border: 1px solid #2b2b2e;
+  border-radius: 8px;
+}
+
+/* Customize the track */
+.table-scrollbar::-webkit-scrollbar-track {
+  background-color: #191b1b;
+  /* Set the color of the track */
+  border-radius: 8px;
+}
+
+.topWalletTable {
+  border-spacing: 4px;
+  border-collapse: inherit;
+}
